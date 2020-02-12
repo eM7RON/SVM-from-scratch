@@ -106,7 +106,6 @@ wheel                     0.34.2                   py36_0    conda-forge
 wincertstore              0.2                   py36_1003    conda-forge  
 zeromq                    4.3.2                h6538335_2    conda-forge  
 zlib                      1.2.11            h2fa13f4_1006    conda-forge  
-
 </pre>
 
 ### Install instructions:
@@ -131,7 +130,7 @@ To make the new environment avaialable in Jupyter lab/notebooks:
 
 ## Authors
 
-* **eM7RON** - *Initial work* - [eM7RON](https://github.com/eM7RON)
+* **eM7RON (Simon Tucker)** - *Initial work* - [Github](https://github.com/eM7RON), [linkedin](https://www.linkedin.com/in/simon-tucker-21838372/)
 
 ## License
 
@@ -139,4 +138,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* **neal-o-r** - *Platt Scaling* - [neal-o-r](https://github.com/neal-o-r), [Platt Scaling](https://github.com/neal-o-r/platt)
+* **neal-o-r** - *Platt Scaling* - [Github](https://github.com/neal-o-r), [Platt Scaling](https://github.com/neal-o-r/platt)
