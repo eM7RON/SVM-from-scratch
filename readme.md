@@ -4,12 +4,13 @@ The aim of this notebook is to explore how the Support Vector Machine algorithm 
 
 Outline:
 
-Familiarise ourselves with constrained optimisation and the Lagrangian dual formulation.
-Code a linear large margin classifier for linearly separable data.
-Modify this code, which uses a hard margin to a soft margin.
-Finally, use the kernel trick to map the data to a high-dimensional feature space, while calculating the necessary inner-products in the original data space.
-Adapt SVM for multiclass problems
-Discuss
+1. Familiarise ourselves with constrained optimisation and the Lagrangian dual formulation.
+2. Code a linear large margin classifier for linearly separable data.
+3. Modify this code, which uses a hard margin to a soft margin.
+4. Finally, use the kernel trick to map the data to a high-dimensional feature space, while calculating the necessary inner-products in the original data space.
+5. Adapt SVM for multiclass problems
+6. Discuss
+
 At each stage we will test using data and create visualizations.
 
 #### Create a new environment using anaconda prompt
@@ -32,10 +33,10 @@ To make the new environment avaialable in Jupyter lab/notebooks:
 
 You should now have the following environment:
 
-3.6.7 (default, Dec  6 2019, 07:03:06) [MSC v.1900 64 bit (AMD64)]
-# packages in environment at C:\Anaconda3\envs\ML:
-#
-# Name                    Version                   Build  Channel
+##### 3.6.7 (default, Dec  6 2019, 07:03:06) [MSC v.1900 64 bit (AMD64)]
+##### packages in environment at C:\Anaconda3\envs\ML:
+
+Name                      Version                   Build    Channel
 backcall                  0.1.0                      py_0    conda-forge
 blas                      1.0                         mkl  
 ca-certificates           2019.11.28           hecc5488_0    conda-forge
