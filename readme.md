@@ -29,7 +29,6 @@ The following Python environment is recommended:
 
 ##### 3.6.7 (default, Dec  6 2019, 07:03:06) [MSC v.1900 64 bit (AMD64)]
 
-packages in environment at C:\path	o\environment\ML:
 <pre>
 Name                      Version                   Build    Channel   
 backcall                  0.1.0                      py_0    conda-forge  
@@ -108,7 +107,7 @@ wincertstore              0.2                   py36_1003    conda-forge
 zeromq                    4.3.2                h6538335_2    conda-forge  
 zlib                      1.2.11            h2fa13f4_1006    conda-forge  
 
-<\pre>
+</pre>
 
 ### Install instructions:
 
