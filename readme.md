@@ -1,6 +1,6 @@
-The main.ipynb file contains the main code/tutorial and instructions. Just simply open it with Jupyter notebook/lab and follow along.
+# Support Vector Machines From Scratch
 
-The aim of this notebook is to explore how the Support Vector Machine algorithm works for classification problems. I keep these tutorials to act as a reference for myself and to educate others.
+Just some exploration of SVMs; how they work and what they do. I keep these tutorials to act as a reference for myself and to educate others.
 
 Outline:
 
@@ -11,32 +11,25 @@ Outline:
 5. Adapt SVM for multiclass problems
 6. Discuss
 
-At each stage we will test using data and create visualizations.
+## Getting Started
 
-#### Create a new environment using anaconda prompt
+You can simply download the repository and open up the main.ipynb in Jupyter notebook (or lab) and follow the instructions.
 
-I encountered some issues trying to create a stable environment for the notebook. The main problems encountered were due to the scs convex optimization package not linking/detecting mkl/blas/lapack and the grid search sklearn function not parallelizing correctly. Although, it is quite possible that this problem is exclusive to users of Windows 10 64-bit OS like myself.
+### Prerequisites
 
-In the end I came up with this simple install. Simply run the following in anaconda prompt to create a new environment named ML (mac/linux users should write 'source' before 'conda' I think): 
+python 3
+numpy
+scipy
+scikit-learn
+matplotlib
+scs
+cvxpy
 
-##### conda create -n ML -c conda-forge -c defaults python=3.6.7 ipykernel numpy scipy scikit-learn matplotlib tqdm cvxopt cvxpy
-
-'-c conda-forge -c defaults' specifies the priorities, descending from left to right, of the channels from which each package should be downloaded.
-
-The new environment must be activated with:
-
-##### conda activate ML
-
-To make the new environment avaialable in Jupyter lab/notebooks:
-
-##### python -m ipykernel install --user --name ML --display-name ML
-
-You should now have the following environment:
+The following Python environment is recommended:
 
 ##### 3.6.7 (default, Dec  6 2019, 07:03:06) [MSC v.1900 64 bit (AMD64)]
-##### packages in environment at C:\Anaconda3\envs\ML:
-
-Name                      Version                   Build    Channel
+##### packages in environment at C:\path	o\environment\ML:
+Name \ \ \ \ \ \ \ \ \ \  Version                   Build    Channel
 backcall                  0.1.0                      py_0    conda-forge
 blas                      1.0                         mkl  
 ca-certificates           2019.11.28           hecc5488_0    conda-forge
@@ -112,3 +105,35 @@ wheel                     0.34.2                   py36_0    conda-forge
 wincertstore              0.2                   py36_1003    conda-forge
 zeromq                    4.3.2                h6538335_2    conda-forge
 zlib                      1.2.11            h2fa13f4_1006    conda-forge
+
+### Install instructions:
+
+#### Create a new environment using anaconda prompt
+
+I encountered some issues trying to create a stable environment for the notebook. The main problems encountered were due to the scs convex optimization package not linking/detecting mkl/blas/lapack and the grid search sklearn function not parallelizing correctly. Although, it is quite possible that this problem is exclusive to users of Windows 10 64-bit OS like myself.
+
+In the end I came up with this simple install. Simply run the following in anaconda prompt to create a new environment named ML (mac/linux users should write 'source' before 'conda' I think): 
+
+##### conda create -n ML -c conda-forge -c defaults python=3.6.7 ipykernel numpy scipy scikit-learn matplotlib tqdm cvxopt cvxpy
+
+'-c conda-forge -c defaults' specifies the priorities, descending from left to right, of the channels from which each package should be downloaded.
+
+The new environment must be activated with:
+
+##### conda activate ML
+
+To make the new environment avaialable in Jupyter lab/notebooks:
+
+##### python -m ipykernel install --user --name ML --display-name ML
+
+## Authors
+
+* **eM7RON** - *Initial work* - [eM7RON](https://github.com/eM7RON)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* **neal-o-r** - *Platt Scaling* - [neal-o-r](https://github.com/neal-o-r), [Platt Scaling](https://github.com/neal-o-r/platt)
