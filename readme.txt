@@ -1,1 +1,0 @@
-The __main__.ipynb file contains the main code/tutorial and instructions. Just simply open it with Jupyter notebook/lab and follow along.
