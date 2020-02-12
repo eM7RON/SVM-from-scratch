@@ -29,8 +29,8 @@ The following Python environment is recommended:
 
 ##### 3.6.7 (default, Dec  6 2019, 07:03:06) [MSC v.1900 64 bit (AMD64)]
 ##### packages in environment at C:\path	o\environment\ML:
-Name \ \ \ \ \ \ \ \ \ \  Version                   Build    Channel
-backcall                  0.1.0                      py_0    conda-forge
+Name \hfill               Version \hfill            Build \hfill Channel
+backcall                  0.1.0                      py_0 \hfill conda-forge
 blas                      1.0                         mkl  
 ca-certificates           2019.11.28           hecc5488_0    conda-forge
 certifi                   2019.11.28               py36_0    conda-forge
