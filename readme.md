@@ -2,7 +2,7 @@
 
 Just some exploration of SVMs; how they work and what they do. I keep these tutorials to act as a reference for myself and to educate others.
 
-[logo]: https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg"Logo Title Text 2"
+![](https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg)
 
 Outline:
 
