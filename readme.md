@@ -2,7 +2,7 @@
 
 Just some exploration of SVMs; how they work and what they do. I keep these tutorials to act as a reference for myself and to educate others.
 
-![](https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg =250x)
+<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="200"/>
 
 Outline:
 
