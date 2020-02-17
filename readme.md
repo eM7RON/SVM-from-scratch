@@ -5,10 +5,22 @@ Just some exploration of SVMs; how they work and what they do. I keep these tuto
 ### Some examples of notebook output:
 
 ##### Donut Data
+<div id="container">
 <img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="250"/>
+</div>
+
+#container {
+    height:100px;
+    line-height:100px;
+}
+
+#container img {
+    vertical-align:middle;
+    max-height:100%;
+}
 
 ##### RBF Kernel
-<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img2.svg" alt="RBF Kernel" width="250"/>
+<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img2.svg" alt="RBF" width="250"/>
 
 ##### 3D View
 <img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img3.svg" alt="3D" width="1000"/>
