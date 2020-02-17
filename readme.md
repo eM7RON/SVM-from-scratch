@@ -4,11 +4,11 @@ Just some exploration of SVMs; how they work and what they do. I keep these tuto
 
 #### Some examples of notebook output:
 
-##### Donut Data
-<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="250"/>
+##### <div style="text-align:center"> Donut Data </div>
+<div style="text-align:center"><img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="250"/></div>
 
 ##### RBF Kernel
-<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img2.svg" alt="RBF Kernel" width="250"/></span>
+<div style="text-align:center"><img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img2.svg" alt="RBF Kernel" width="250"/></div>
 
 ##### 3D View
 <img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img3.svg" alt="3D" width="750"/>
