@@ -2,7 +2,7 @@
 
 Just some exploration of SVMs; how they work and what they do. I keep these tutorials to act as a reference for myself and to educate others.
 
-<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="200"/>
+<img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="250"/><img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img2.svg" alt="RBF Kernel" width="250"/><img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img3.svg" alt="3D" width="250"/>
 
 Outline:
 
