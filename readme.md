@@ -2,6 +2,8 @@
 
 Just some exploration of SVMs; how they work and what they do. I keep these tutorials to act as a reference for myself and to educate others.
 
+[logo]: https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg"Logo Title Text 2"
+
 Outline:
 
 1. Familiarise ourselves with constrained optimisation and the Lagrangian dual formulation.
@@ -13,7 +15,7 @@ Outline:
 
 ## Getting Started
 
-You can simply download the repository and open up the main.ipynb in Jupyter notebook (or lab) and follow the instructions.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
