@@ -80,7 +80,7 @@ class SVC(BaseEstimator, ClassifierMixin):
     '''
 
     proba_fit = False
-    classes_  = [-1, 1]
+    classes_  = [-1, 1] # Required
 
     def __init__(
              self,
@@ -95,14 +95,16 @@ class SVC(BaseEstimator, ClassifierMixin):
              ):
         '''
         Args:
-            C         - float or int, the soft margin penalty
-            kernel    - function, takes two array-like objects as input and projects them
-                        into a different space, returns a single array-like object
-            gamma     - float or int, kernel hyperparameter
-            delta     - float or int, kernel hyperparameter (polynomial only)
-            threshold - float or int, support vectors have alphas that exceed this value
-            dtype     - callable or string, the data type to use, effects precision,
-                        i.e. np.float32 or 'float64' 
+            C             - float or int, the soft margin penalty
+            kernel        - function, takes two array-like objects as input and projects them
+                            into a different space, returns a single array-like object
+            gamma         - float or int, kernel hyperparameter
+            delta         - float or int, kernel hyperparameter (polynomial only)
+            threshold     - float or int, support vectors have alphas that exceed this value
+            dtype         - callable or string, the data type to use, effects precision,
+                            i.e. np.float32 or 'float64'
+            solver_params - dictionary, kwargs for the cvxpy solver
+            
 
         '''
         
@@ -176,12 +178,12 @@ class SVC(BaseEstimator, ClassifierMixin):
         # b = rac{1}{N_S}\sum\limits_{v∈S} [α_u y_u k(x_u , x_v )]
 
         self.b   = self.dtype(0.0)
-        self.idx = np.arange(len(X))[mask]
+        self.sv_idx = np.arange(len(X))[mask]
         n_alpha  = len(self.alphas)
 
         for i in range(n_alpha):
             self.b += self.support_vector_labels[i]
-            self.b -= np.sum(self.alphas * self.support_vector_labels * K[self.idx[i], mask])
+            self.b -= np.sum(self.alphas * self.support_vector_labels * K[self.sv_idx[i], mask])
         self.b /= n_alpha
         
         if self.probability:
@@ -206,7 +208,7 @@ class SVC(BaseEstimator, ClassifierMixin):
         '''
         Calculates the signed distance (d_m) of sample x_m using equation:
         
-        d_{m} = \sum\limits_{n}lpha_{n} y_{n} k(x_{n}, x_{m}) + b
+        d_{m} = \sum_{n}alpha_{n} y_{n} k(x_{n}, x_{m}) + b
         
         Args:
         X         - array-like, shape[n_samples, n_features], new data
