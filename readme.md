@@ -5,21 +5,21 @@ Just some exploration of SVMs; how they work and what they do. I keep these tuto
 ### Examples of notebook output:
 
 <p align="center">
-    <b> Donut Data <b/>
+<b> Donut Data <b/>
 <p/>
 <p align="center">
     <img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img1.svg" alt="Donut Data" width="250"/>
 <p/>
 
 <p align="center">
-    <b> RBF Kernel <b/>
+<b> RBF Kernel <b/>
 <p/>
 <p align="center">
     <img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img2.svg" alt="RBF" width="250"/>
 <p/>
 
 <p align="center">
-    <b> 3D View <b/>
+<b> 3D View <b/>
 <p/> 
 <p align="center">
     <img src="https://github.com/eM7RON/SVM-from-scratch/blob/master/img3.svg" alt="3D" width="1000"/>
@@ -137,7 +137,7 @@ zlib                      1.2.11            h2fa13f4_1006    conda-forge
 
 Download and extract the repository. Navigate to the resulting folder in Anaconda prompt and use the following command:
 
-###### conda env create -f conda_setup.yml
+`conda env create -f conda_setup.yml`
 
 this creates the environment: C:\Anaconda3\envs\ML
 
@@ -145,7 +145,7 @@ The name and location of the environment may be altered by editing the conda_set
 
 Alternatively, one can update an existing environment with :
 
-###### conda env update --name myenv --file conda_setup.yml
+`conda env update --name myenv --file conda_setup.yml`
 
 where *myenv* is the name of the environment
 
@@ -155,17 +155,17 @@ I encountered some issues trying to create a stable environment for the notebook
 
 In the end I came up with this simple install. Simply run the following in anaconda prompt to create a new environment named ML (mac/linux users should write 'source' before 'conda' I think): 
 
-###### conda create -n ML -c conda-forge -c defaults python=3.6.7 ipykernel numpy scipy scikit-learn matplotlib tqdm cvxopt cvxpy
+`conda create -n ML -c conda-forge -c defaults python=3.6.7 ipykernel numpy scipy scikit-learn matplotlib tqdm cvxopt cvxpy`
 
 '-c conda-forge -c defaults' specifies the priorities, descending from left to right, of the channels from which each package should be downloaded.
 
 The new environment must be activated with:
 
-###### conda activate ML
+`conda activate ML`
 
 To make the new environment avaialable in Jupyter lab/notebooks:
 
-###### python -m ipykernel install --user --name ML --display-name ML
+`python -m ipykernel install --user --name ML --display-name ML`
 
 ## Authors
 
